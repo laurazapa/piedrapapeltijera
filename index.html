@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Juego piedra papel tijera lagarto Spock</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="js/jugar.js"></script>
+	</head>
+	<body>
+		<!-- Imagen flotante para volver al portfolio-->
+		<div id="portfolio">
+			<a href= "http://portfoliolaura.getenjoyment.net/"><img src="imagenes/portfolio.png" alt="Volver al portfolio" title="Volver al portfolio"></a>
+		</div>
+		<!-- Fin de la imagen flotante -->
+
+		<header>
+			<h1>Piedra Papel Tijera Lagarto Spock</h1>
+		</header>		
+		
+		<ul class="flex-container">
+			<li class="flex1">Partidas:<br><output id="outPartidas">0</output></li>
+			<li class="flex1">Ganadas:<br><output id="outGanadas">0</output></li>
+			<li class="flex1">Perdidas:<br><output id="outPerdidas">0</output></li>
+			<li class="flex1">Empatadas:<br><output id="outEmpatadas">0</output></li>
+		</ul>
+
+		<div class="flex-container" id="jugadores">
+			<div class="flex1">
+				<h2>Jugador</h2>
+				<img id="imgJugador" src="imagenes/jugador_normal.jpg">
+				<img id="manoJugador" src="imagenes/box.png">
+			</div>
+
+			<div class="flex1">
+				<h2>CPU</h2>
+				<img id="manoCPU" src="imagenes/box.png">
+				<img id="imgCPU" src="imagenes/CPU_normal.jpg" id="imgCPU">
+			</div>
+		</div>
+
+		<output id="outResultado"></output>
+
+		<h2 id="textoElige">Elige!</h2>
+		<div id="seleccion" class="flex-container">
+			<figure class="flex1">
+				<img src="imagenes/piedra.png" alt="piedra" onclick="tirar('piedra')">
+			</figure>
+
+			<figure class="flex1">
+				<img src="imagenes/papel.png" alt="papel" onclick="tirar('papel')">
+			</figure>
+
+			<figure class="flex1">
+				<img src="imagenes/tijera.png" alt="tijera" onclick="tirar('tijera')">
+			</figure>
+
+			<figure class="flex1">
+				<img src="imagenes/lagarto.png" alt="lagarto" onclick="tirar('lagarto')">
+			</figure>
+
+			<figure class="flex1">
+				<img src="imagenes/spock.png" alt="spock" onclick="tirar('spock')">
+			</figure>
+		</div>
+
+	</body>
+</html>
